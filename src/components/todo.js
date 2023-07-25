@@ -1,5 +1,6 @@
 import { useState } from 'react';
-var transormDate = (d) => {
+var transormDate = (stringdate) => {
+  var d = new Date(stringdate);
   var am = false;
   var date = d.getDate();
   var month = d.getMonth() + 1;

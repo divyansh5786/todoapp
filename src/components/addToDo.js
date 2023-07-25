@@ -10,6 +10,9 @@ function AddToDo(props) {
        // console.log(newtodo);
     }
     var updateTodo = ()=>{
+        if(!newtodo.title || !newtodo.desc){
+            alert("title or description no there");
+        }
         var newobj = {
             title:newtodo.title,
             desc:newtodo.desc,
@@ -26,7 +29,7 @@ function AddToDo(props) {
       
       
     
-    <div className="px-80 py-4 " align="left">
+    <div className=" px-[4%] sm:px-[10%] md:px-[15%] py-4 " align="left">
     <hr className="mb-4 border-t-2 border-t-neutral-300"/>
     
     <div className="text-4xl tracking-wide font-bold" >Welcome to ToDo App</div>
